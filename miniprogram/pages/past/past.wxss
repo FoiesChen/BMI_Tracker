@@ -1,0 +1,53 @@
+/* past.wxss */
+page {
+  background-color: #f5f5f5;
+}
+.title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.container {
+  padding: 20px;
+}
+
+.loading, .no-records {
+  text-align: center;
+  font-size: 16px;
+  color: #999;
+  margin-top: 20px;
+}
+
+.record-list {
+  margin-top: 20px;
+}
+
+.record-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.item-content {
+  padding: 15px;
+}
+
+.item-content text {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.delete-btn {
+  padding: 8px 16px;
+  background-color: #dd524d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.delete-btn:active {
+  background-color: #c0392b;
+}

@@ -1,0 +1,25 @@
+<!-- past.wxml -->
+<view class="container">
+  <view class="title">BMI记录</view>
+  <block wx:if="{{loading}}">
+    <view class="loading">加载中...</view>
+  </block>
+  <block wx:elif="{{bmiRecords.length === 0}}">
+    <view class="no-records">没有找到任何BMI记录。</view>
+  </block>
+  <block wx:else>
+    <view class="record-list">
+      <block wx:for="{{bmiRecords}}" wx:key="id">
+        <view class="record-item">
+          <view class="item-content">
+            <text>体重 (kg): {{item.weight}}</text>
+            <text>身高 (cm): {{item.height}}</text>
+            <text>BMI指数: {{item.bmi}}</text>
+            <text>记录时间: {{item.Time}}</text>
+          </view>
+          <button class="delete-btn" bindtap="deleteRecord" data-id="{{item._id}}">删除</button>
+        </view>
+      </block>
+    </view>
+  </block>
+</view>

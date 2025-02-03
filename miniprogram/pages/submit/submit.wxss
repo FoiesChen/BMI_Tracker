@@ -1,0 +1,45 @@
+.container {
+  padding: 20px;
+}
+.title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  height: 40px; /* 增加了输入框的高度 */
+  padding: 10px; /* 调整了内边距 */
+  box-sizing: border-box;
+  line-height: 20px; /* 设置了行高 */
+}
+
+/* 添加 ::placeholder 选择器来为占位符文本添加样式 */
+.input-group input::placeholder {
+  color: #aaa; /* 可选：改变占位符颜色 */
+  font-size: 14px; /* 可选：调整字体大小 */
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #1aad19;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}

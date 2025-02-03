@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="title">记录生活，记录健康</view>
+  <view class="header">
+    <view class="card" bindtap="navigateToSubmit">
+      <image class="header-image" src="../image/BMI.png"></image>
+      <text class="card-text">记录BMI</text>
+    </view>
+    <view class="card" bindtap="navigateToPast">
+      <image class="header-image" src="../image/记录.png"></image>
+      <text class="card-text">查看BMI记录</text>
+    </view>
+    <view class="card" bindtap="navigateTodaily">
+      <image class="header-image" src="../image/日常.png"></image>
+      <text class="card-text">记录日常</text>
+    </view>
+    <view class="card" bindtap="navigateTodailypast">
+      <image class="header-image" src="../image/记录.png"></image>
+      <text class="card-text">查看日常记录</text>
+    </view>
+  </view>
+</view>

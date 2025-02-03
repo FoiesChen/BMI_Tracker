@@ -1,0 +1,92 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.loading {
+  text-align: center;
+  color: #999;
+  font-size: 16px;
+  padding: 20px 0;
+}
+
+.no-records {
+  text-align: center;
+  color: #999;
+  font-size: 16px;
+  padding: 20px 0;
+}
+
+.record-item {
+  border-bottom: 1px solid #eee;
+  padding: 10px; 
+  margin-bottom: 10px; 
+  background-color: #ffffff; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+  overflow: hidden; 
+  height: auto; 
+  max-height: 300px; 
+}
+
+
+.record-title,
+.record-content,
+.record-mood,
+.record-date {
+  display: block; /* 确保每个元素各占一行 */
+}
+
+.record-title {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.record-content {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+  white-space: pre-wrap; /* 保留空白符和换行符 */
+  word-wrap: break-word; /* 长单词或URL自动换行 */
+}
+
+.record-mood {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.record-date {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+/* 图片容器 */
+.image-container {
+  display: flex;
+  justify-content: center; /* 居中显示 */
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.record-image {
+  width: 100px; /* 或根据实际需要调整 */
+  height: 100px;
+  object-fit: cover;
+}
+
+/* 删除按钮 */
+.delete-button {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}

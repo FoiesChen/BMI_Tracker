@@ -1,0 +1,39 @@
+<view class="container">
+  <block wx:if="{{loading}}">
+    <view class="loading">加载中...</view>
+  </block>
+
+  <block wx:if="{{!loading && dailyRecords.length === 0}}">
+    <view class="no-records">暂无日记记录</view>
+  </block>
+
+  <block wx:for="{{dailyRecords}}" wx:key="id" wx:if="{{!loading}}">
+    <view class="record-item">
+      <text class="record-title">标题：{{item.title}}</text>
+      <text class="record-content">内容：{{item.content}}</text>
+      <text class="record-mood">心情: {{item.mood}}</text>
+      <text class="record-date">时间：{{item.date}}</text>
+    
+      <view class="image-container" wx:if="{{item.imageUrls && item.imageUrls.length > 0}}">
+        <block wx:for="{{item.imageUrls}}" wx:key="index">
+          <image 
+            class="record-image"
+            src="{{item}}" 
+            mode="aspectFill"
+            data-index="{{index}}"
+            data-imageindex="{{index}}"
+            bindtap="previewImage"
+          ></image>
+        </block>
+      </view>
+
+      <button 
+        class="delete-button"
+        data-index="{{index}}"
+        bindtap="deleteRecord"
+      >
+        删除
+      </button>
+    </view>
+  </block>
+</view>

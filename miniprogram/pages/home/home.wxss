@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.header {
+  display: grid; /* 使用网格布局 */
+  grid-template-columns: repeat(2, 1fr); /* 两列 */
+  gap: 20px; /* 增加卡片之间的间距 */
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff; /* 背景颜色 */
+  border-radius: 10px; /* 圆角 */
+  padding: 15px; /* 内边距 */
+  width: 85%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+  margin: 0 2px; /* 可选：为卡片添加额外的外边距 */
+}
+
+.card:hover {
+  transform: scale(1.05); /* 点击时放大 */
+}
+
+.header-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* 图片为圆形 */
+  margin-bottom: 10px; /* 图片与文字之间的间距 */
+}
+
+.card-text {
+  font-size: 16px;
+  color: #333; /* 文字颜色 */
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px; /* 防止在大屏幕上过宽 */
+  margin-top: 20px; /* 与上方元素的间距 */
+}

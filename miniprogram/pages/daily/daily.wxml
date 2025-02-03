@@ -1,0 +1,38 @@
+<view class="container">
+  
+  <input 
+    class="title-input" 
+    placeholder="请输入标题" 
+    bindinput="onTitleInput" 
+    value="{{title}}" 
+  />
+
+  <textarea 
+    class="content-input" 
+    placeholder="请输入内容" 
+    bindinput="onContentInput" 
+    value="{{content}}"
+  ></textarea>
+
+  <input 
+    class="mood-input" 
+    placeholder="请输入心情" 
+    bindinput="onMoodInput" 
+    value="{{mood}}" 
+  />
+
+  <view class="image-upload">
+    <button bindtap="chooseImage">选择图片</button>
+    <view wx:for="{{images}}" wx:key="index" class="uploaded-images">
+      <image 
+        class="uploaded-image" 
+        src="{{item}}" 
+        mode="aspectFill" 
+        data-index="{{index}}"
+        bindtap="previewImage"
+      ></image>
+    </view>
+  </view>
+
+  <button bindtap="submitDaily" class="submit-button">提交日记</button>
+</view>

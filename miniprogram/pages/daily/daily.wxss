@@ -1,0 +1,80 @@
+page {
+  background-color: #f4f4f4;
+}
+
+.container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px; 
+}
+
+.title-input {
+  font-weight: bold;
+  line-height: 1.5; 
+  height: 50px;
+}
+
+.mood-input {
+  color: #3a8ee6; 
+  line-height: 1.5; 
+  height: 50px;
+}
+
+.content-input {
+  height: 150px;
+  resize: none;
+}
+
+.image-upload {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #1aad19;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #179b15;
+}
+
+.uploaded-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.uploaded-image {
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #007aff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.submit-button:hover {
+  background-color: #006aff;
+}
